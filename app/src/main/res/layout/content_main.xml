@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bac_bac"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="200dp">
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/textsh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="42dp"
+                   android:fontFamily="@font/rrrr"
+                    android:gravity="center"
+                    android:text="♥ بدأ القلبُ يرف لِنسائِم رمضان ♥َ"
+                    android:textColor="#F0DDA9"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stars"/>
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="190dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stars" />
+            </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/qoutes"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="🦋ا قتباسات عشوائية 🦋"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hakbt"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/jazeera"
+        android:background="@drawable/et_ui"
+        android:text="حقيبه الصائم في رمضان" />
+
+    <Button
+        android:id="@+id/azkar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:fontFamily="@font/jazeera"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:text=" أذكار المسلم" />
+
+
+    <Button
+        android:id="@+id/kutob"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="كتب و قصص اسلاميه"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/masbahaa"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="المسبحة الإلكترونية"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/roqiaa"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="الرقية الشرعية"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="رسائل سعادة و تفاؤلً"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/thawaap"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/et_ui"
+        android:fontFamily="@font/jazeera"
+        android:text="🌸 تطبيق ثواب - أنصحك بتحميلة 🌸"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <net.steamcrafted.materialiconlib.MaterialIconView
+        android:id="@+id/about"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        app:materialIcon="account_box_outline"
+        app:materialIconColor="#C3C4C4"
+        app:materialIconSize="36dp"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

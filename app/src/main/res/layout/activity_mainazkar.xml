@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/test_gre"
+    tools:context="com.walid.MuslimRoad.Mainazkar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:text="♥ أذكار المسلم ♥"
+    android:textSize="19sp"
+    android:textColor="#094261"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardazkarsbah"
+       app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/aa1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أذكار الصباح"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animview"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    android:background="@drawable/circlw_bac1"
+                    app:lottie_fileName="sbah.json"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardazkarmsaa"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/asa1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أذكار المساء"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animvieaw"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    android:background="@drawable/circlw_bac2"
+                    app:lottie_fileName="msaa.json"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardazkarrmdan"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/aas1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أذكار رمضانيه"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animsview"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    android:background="@drawable/circlw_bac3"
+                    app:lottie_fileName="night.json"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardazkatftorsohor"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/agga1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أذكار الفطار والسحور"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animviesw"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="azkar.json"
+                    android:background="@drawable/circlw_bac4"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardazkarelnoom"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/aaaa1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أذكار النوم"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animvissew"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    android:background="@drawable/circlw_bac3"
+                    app:lottie_fileName="msaa.json"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+    android:id="@+id/cardaztkazmnelnoom"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+            <com.romainpiel.shimmer.ShimmerTextView
+                android:id="@+id/faa1"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@drawable/gre_gre"
+                android:text="............................"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="أذكار الاستيقاظ"
+                    android:textColor="#0C4074"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/jazeera"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animvaiew"
+                android:layout_width="65dp"
+                android:layout_margin="5dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="astakaz.json"
+                android:background="@drawable/circlw_bac4"
+                app:lottie_loop="true"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adiamtnea"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/aaas1"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/gre_gre"
+                    android:text="............................"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="أدعية عامة"
+                        android:textColor="#0C4074"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/jazeera"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animaview"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    android:background="@drawable/circlw_bac3"
+                    app:lottie_fileName="znea.json"
+                    app:lottie_loop="true"
+                    tools:ignore="MissingConstraints" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

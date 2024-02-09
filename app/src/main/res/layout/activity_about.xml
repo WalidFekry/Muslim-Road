@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.walid.MuslimRoad.About"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="167dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFF"
+                    app:cardCornerRadius="25dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_myapp" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animation_view"
+                        android:layout_width="500dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="znea.json"
+                        app:lottie_loop="true"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+               app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="#FFF"
+                android:layout_marginTop="120dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtabout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:fontFamily="@font/jazeera"
+                        android:gravity="center"
+                        android:text="هذا التطبيق هو إصدار مجاني لمساعدتك في شهر رمضان و يحتوي على العديد من الأذكار و المساعدات الرمضانية لإدارة وقتك بشكل صحيح و  يضم أذكار الصباح و المساء مكتوبة و أذكار المسلم بدون إنترنت ."
+                        android:textColor="#052250"
+                        android:textSize="18dp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/gmail"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:materialIcon="gmail"
+                    app:materialIconColor="#FFFFFF"
+                    app:materialIconSize="36dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/em"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/jazeera"
+                    android:text="♥ ارسل لنا اقتراحك لتطوير التطبيق ♥"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/facebooks"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:materialIcon="facebook_box"
+                    app:materialIconColor="#FFF"
+                    app:materialIconSize="36dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/jazeera"
+                    android:paddingLeft="20dp"
+                    android:text="♥ تواصل مع مبرمج التطبيق ♥"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/share"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:materialIcon="share_variant"
+                    app:materialIconColor="#FFF"
+                    app:materialIconSize="36dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/sh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/jazeera"
+                    android:paddingLeft="20dp"
+                    android:text="♥ شارك التطبيق مع الأصدقاء ♥"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/star"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:materialIcon="star"
+                    app:materialIconColor="#FBC02D"
+                    app:materialIconSize="36dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/ra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="♥ ادعمنا بتقييمك للتطبيق ♥"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/jazeera"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <net.steamcrafted.materialiconlib.MaterialIconView
+                    android:id="@+id/googleplays"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:materialIcon="google_play"
+                    app:materialIconColor="#FFFFFF"
+                    app:materialIconSize="36dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/gooo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="♥ المزيد من التطبيقات المجانية ♥"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/jazeera"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

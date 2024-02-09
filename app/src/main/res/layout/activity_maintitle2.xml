@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Maintitle2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1B326A"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgicon1"
+                android:background="@drawable/stars"
+                android:layout_width="50dp"
+                android:layout_gravity="bottom"
+                android:layout_height="60dp"
+                android:src="@drawable/moo_o" />
+
+            <com.romainpiel.shimmer.ShimmerTextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jazeera"
+                android:gravity="center"
+                android:text="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+                android:textColor="#CFD5D6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FED17D"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="#1B326A"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/titletext"
+                            android:layout_width="match_parent"
+                            android:text="hhhhhhhh"
+                            android:fontFamily="@font/jazeera"
+                            android:gravity="center"
+                            android:textColor="#F8F3F5"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/maintitle2"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/Banner2">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
+
+
+</LinearLayout>
