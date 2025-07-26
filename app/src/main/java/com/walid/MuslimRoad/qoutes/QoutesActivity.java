@@ -46,10 +46,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
 public class QoutesActivity extends BaseActivity implements Adaptersada.OnMessengerClick {
     public static final int PERMISSION_CODE = 6458;
     private final String TAG = "no";
@@ -57,7 +53,6 @@ public class QoutesActivity extends BaseActivity implements Adaptersada.OnMessen
     List<new_item_post> list2;
     String name = "https://post.walid-fekry.com/auto_notification/auto_notification_apps/api_post_apps.php";
     ProgressBar progressBar;
-    @BindView(R.id.adsContainer)
     LinearLayout adsContainer;
     private String post;
     private AppCompatImageButton back;
@@ -67,25 +62,19 @@ public class QoutesActivity extends BaseActivity implements Adaptersada.OnMessen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_qoutes);
+        adsContainer = findViewById(R.id.adsContainer);
         back = findViewById(R.id.back_button);
         back.setOnClickListener((v) -> finish());
-        setUnBinder(ButterKnife.bind(this));
         setUpAds();
         getHandler().postDelayed(this::LoadAds, 4000);
         boolean connected = false;
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
-                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED || connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
             connected = true;
         } else {
-            new SmartDialogBuilder(QoutesActivity.this)
-                    .setTitle("ملاحظه")
-                    .setSubTitle("لمزيد من الرسائل المتجدده يوميا تاكد انك متصل بالإنترنت")
-                    .setCancalable(false)
-                    .setTitleFont(Typeface.createFromAsset(getAssets(), "jazeera.ttf")) //set title font
+            new SmartDialogBuilder(QoutesActivity.this).setTitle("ملاحظه").setSubTitle("لمزيد من الرسائل المتجدده يوميا تاكد انك متصل بالإنترنت").setCancalable(false).setTitleFont(Typeface.createFromAsset(getAssets(), "jazeera.ttf")) //set title font
                     .setSubTitleFont(Typeface.createFromAsset(getAssets(), "jazeera.ttf")) //set sub title font
                     .setNegativeButtonHide(true) //hide cancel button
                     .setPositiveButton("ok", new SmartDialogClickListener() {
@@ -117,23 +106,22 @@ public class QoutesActivity extends BaseActivity implements Adaptersada.OnMessen
         });
         AdRequest adRequest = new AdRequest.Builder().build();
 
-        InterstitialAd.load(this, getString(R.string.Biny1), adRequest,
-                new InterstitialAdLoadCallback() {
-                    @Override
-                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-                        mInterstitialAd = interstitialAd;
-                        Log.i(TAG, "onAdLoaded");
-                    }
+        InterstitialAd.load(this, getString(R.string.Biny1), adRequest, new InterstitialAdLoadCallback() {
+            @Override
+            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                // The mInterstitialAd reference will be null until
+                // an ad is loaded.
+                mInterstitialAd = interstitialAd;
+                Log.i(TAG, "onAdLoaded");
+            }
 
-                    @Override
-                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                        // Handle the error
-                        Log.i(TAG, loadAdError.getMessage());
-                        mInterstitialAd = null;
-                    }
-                });
+            @Override
+            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                // Handle the error
+                Log.i(TAG, loadAdError.getMessage());
+                mInterstitialAd = null;
+            }
+        });
 
         adView.loadAd(adRequest);
 
@@ -165,11 +153,6 @@ public class QoutesActivity extends BaseActivity implements Adaptersada.OnMessen
         } catch (JSONException e) {
             e.printStackTrace();
         }
-    }
-
-    @OnClick(R.id.back_button)
-    void onBackButtonClick() {
-        onBackPressed();
     }
 
     @Override

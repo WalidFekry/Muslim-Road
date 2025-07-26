@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.walid.MuslimRoad">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -42,75 +41,75 @@
         <activity
             android:name=".Webview"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+          />
         <activity
             android:name=".Mainbook2"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+          />
         <activity
             android:name=".Mainbook"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+          />
         <activity
             android:name=".Maintitlepost"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+         />
         <activity
             android:name=".Mainposts"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".Maincard4"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+          />
         <activity
             android:name=".Maintitle4"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+         />
         <activity
             android:name=".Mainadiearmdan"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+           />
         <activity
             android:name=".Mainftor"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".Mainazkarrmadan"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+         />
         <activity
             android:name=".Mainmsa"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+           />
         <activity
             android:name=".Mainsb"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+          />
         <activity
             android:name=".Mainazkar"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+           />
         <activity
             android:name=".Maintitle3"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".Mainreccard2"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+           />
         <activity
             android:name=".Maintitle2"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".Mainreccard1"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".Maintitle1"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" />
+            />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -122,7 +121,6 @@
             android:configChanges="orientation"
             android:exported="true"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -10,32 +10,20 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.walid.MuslimRoad.R;
-//import com.walid.MuslimRoad.data.DataManager;
 
-import butterknife.Unbinder;
 import io.reactivex.disposables.CompositeDisposable;
 
 public abstract class BaseActivity extends AppCompatActivity implements IBaseView {
 
 
     private static final String TAG = "BaseActivity";
-
-    private CompositeDisposable p1;
-    private Unbinder xl1;
-    private Dialog loadingDialog;
-    private Unbinder unbinder;
-
     private final Handler handler = new Handler(Looper.getMainLooper());
-
+    private CompositeDisposable p1;
+    private Dialog loadingDialog;
 
     public Handler xoi() {
         return handler;
     }
-
-    public void spo(Unbinder unbinder) {
-        this.xl1 = unbinder;
-    }
-
 
 
     public CompositeDisposable cxs() {
@@ -65,10 +53,6 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     }
 
 
-    public void setUnBinder(Unbinder unbinder) {
-        this.unbinder = unbinder;
-    }
-
     @Override
     public void showMessage(int resId) {
         Toast.makeText(this, resId, Toast.LENGTH_SHORT).show();
@@ -96,9 +80,6 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     @Override
     protected void onDestroy() {
         handler.removeCallbacksAndMessages(null);
-        if (xl1 != null) {
-            xl1.unbind();
-        }
         cxs().dispose();
         super.onDestroy();
     }
