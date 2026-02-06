@@ -8,14 +8,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    compileSdk 35
+    compileSdk = 36
     defaultConfig {
         applicationId "com.walid.myapplication"
         minSdkVersion 23
-        targetSdkVersion 35
+        targetSdkVersion 36
         multiDexEnabled true
-        versionCode 29
-        versionName "3.3"
+        versionCode 30
+        versionName "3.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -35,11 +35,11 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.7.1'
-    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.google.android.material:material:1.13.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    implementation 'com.google.firebase:firebase-messaging:25.0.0'
-    implementation 'com.google.firebase:firebase-database:22.0.0'
-    implementation 'com.google.android.gms:play-services-ads:24.5.0'
+    implementation 'com.google.firebase:firebase-messaging:25.0.1'
+    implementation 'com.google.firebase:firebase-database:22.0.1'
+    implementation 'com.google.android.gms:play-services-ads:24.9.0'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
@@ -48,7 +48,7 @@ dependencies {
     implementation 'com.github.code-mc:material-icon-lib:1.1.5'
     implementation 'com.romainpiel.shimmer:library:1.4.0@aar'
     implementation 'com.github.markushi:circlebutton:1.1'
-    implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.airbnb.android:lottie:6.7.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
@@ -57,8 +57,8 @@ dependencies {
     implementation 'com.github.guy-4444:SmartRateUsDialog-Android:1.00.08'
     // Start New Update
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
     // New Update 19-12-2021
     implementation 'com.github.TecOrb-Developers:SmartAlertDialog:v1.0'
-    implementation 'androidx.work:work-runtime:2.10.2'
+    implementation 'androidx.work:work-runtime:2.11.1'
 }
